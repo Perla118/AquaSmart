@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AquaSmart.Vistas.Regist"
+             BackgroundColor="White">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro"
+                   FontSize="24"
+                   FontAttributes="None"
+                   TextColor="Black"
+                   HorizontalOptions="Start"
+                   Margin="10,0,10,50" />
+
+            <StackLayout Orientation="Vertical"
+                         Spacing="15">
+                
+                <Label Text="Correo electrónico"
+                       FontSize="16"
+                       FontAttributes="Bold"
+                       TextColor="#5f765f"
+                       HorizontalOptions="Start" VerticalOptions="Center" Margin="10,0,0,0"/>
+                
+                <Entry Placeholder="Your email address"
+                       FontSize="16"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand" Margin="10,0,0,0"/>
+
+                <StackLayout Orientation="Horizontal"
+                             Spacing="10">
+                    <Label Text="Contraseña"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#5f765f"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center" Margin="10,0,0,0"/>
+                </StackLayout>
+                
+                <Entry Placeholder="Mostrar contraseña"
+                       FontSize="16"
+                       PlaceholderColor="Gray"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand"
+                       IsPassword="False" VerticalOptions="Center" Margin="10,0,0,0"/>
+
+                <Button Text="Continuar"
+                        BackgroundColor="#5f765f"
+                        CornerRadius="10"
+                        Margin="20,10,20,0"
+                        TextColor="White"
+                        Command="{Binding Loginu}"
+                        FontAttributes="Bold"
+                        TextTransform="None"
+                        FontSize="16"
+                        HorizontalOptions="FillAndExpand" />
+
+                <StackLayout Orientation="Horizontal"
+                             Spacing="10"
+                             HorizontalOptions="CenterAndExpand">
+                    
+                    
+                    <Label Text="¿Ya tienes una cuenta?"
+                           FontSize="16"
+                           FontAttributes="None"
+                           TextColor="Black"
+                           HorizontalOptions="StartAndExpand"
+                           VerticalOptions="Start" />
+
+                    
+                    <Button Text="Volver"
+                            BackgroundColor="Transparent"
+                            TextColor="#5f765f"
+                            FontSize="15"
+                            Command="{Binding Logind}"
+                            HorizontalOptions="End"
+                            VerticalOptions="End"
+                            TextTransform="None" FontAttributes="None"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

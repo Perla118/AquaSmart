@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AquaSmart.Vistas.Login" BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     Spacing="20">
+            <Image Source="https://i.ibb.co/2tjT8B9/smartfarm.png"
+                   HeightRequest="120"
+                   WidthRequest="120" Margin="0,0,0,10"/>
+
+            <Label Text="AquaSmart" FontSize="34" VerticalOptions="Center" FontAttributes="Bold" TextColor="#5f765f" HorizontalOptions="CenterAndExpand"/>
+            <Label Text="Inicio de sesión" FontSize="28" VerticalOptions="Center" FontAttributes="None" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+
+            <Label Text="Correo Electrónico" FontSize="16" VerticalOptions="Center" FontAttributes="Bold" TextColor="#5f765f"/>
+            <Entry Placeholder="example@email.com" FontSize="16" PlaceholderColor="Black" Keyboard="Email" TextColor="Black"/>
+
+            <Label Text="Contraseña" FontSize="16" VerticalOptions="Center" FontAttributes="Bold" TextColor="#5f765f"/>
+            <Entry Placeholder="Ingrese su Contraseña" FontSize="16" IsPassword="true" PlaceholderColor="Black" TextColor="Black" WidthRequest="300"/>
+
+            <Button Text="Iniciar sesión" BackgroundColor="#5f765f" CornerRadius="10" Command="{Binding Menu}" FontAttributes="Bold" TextTransform="None" FontSize="16" TextColor="White"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Contraseña Olvidada" BackgroundColor="Transparent" TextColor="#a0a1b5" HorizontalOptions="Start" FontAttributes="None" CornerRadius="10" Command="{Binding}" TextTransform="None" Margin="0, 10, 10, 0"/>
+                <Button Text="Registrarse" BackgroundColor="Transparent" TextColor="#5f765f" FontAttributes="None" CornerRadius="10" Command="{Binding Registro}" HorizontalOptions="End" TextTransform="None" Margin="10, 10, 0, 0"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
