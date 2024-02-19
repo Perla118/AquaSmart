@@ -2,9 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AquaSmart.Vistas.Horaris"
-             NavigationPage.IconColor="Black">
+             NavigationPage.IconColor="Black" BackgroundColor="White">
     <ContentPage.Content>
-        <ScrollView BackgroundColor="White">
+        <ScrollView>
             <StackLayout VerticalOptions="Start"
                          Spacing="10"
                          Padding="10">
@@ -38,6 +38,8 @@
                     FontAttributes="None"
                     TextColor="#345fcf"
                     HorizontalOptions="Fill" />
+
+                <Image Source="https://i.ibb.co/Fn7mf03/Whats-App-Image-2024-02-19-at-02-33-30.jpg" WidthRequest="340" HeightRequest="320"/>
 
                 <!--Grafica-->
                 

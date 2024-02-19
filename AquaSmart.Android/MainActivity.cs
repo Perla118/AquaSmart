@@ -16,7 +16,9 @@ namespace AquaSmart.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF1cXmhKYVF2WmFZfVpgcV9CaFZRRWYuP1ZhSXxXdkdiUH9bdHxVR2haWUU=");
             LoadApplication(new App());
+            //base.OnCreate(savedInstanceState);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
