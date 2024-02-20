@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AquaSmart.Vistas.ConfArea"
+             NavigationPage.IconColor="Black" BackgroundColor="White">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" Padding="20" BackgroundColor="White">
+
+                <Label Text="Configuración de Horario de Riego"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#35424a"
+                   HorizontalOptions="Start" />
+
+                <BoxView HeightRequest="1"
+                     BackgroundColor="#5f765f"
+                     HorizontalOptions="FillAndExpand" />
+
+
+                <Label Text="Hora de Inicio:" FontSize="16" TextColor="#35424a"/>
+                <TimePicker Format="HH:mm" TextColor="Black"/>
+
+                <Label Text="Hora de Fin:" FontSize="16" TextColor="#35424a"/>
+                <TimePicker Format="HH:mm" TextColor="Black"/>
+
+                <Button Text="Guardar Configuración"
+                        BackgroundColor="#5f765f"
+                        TextColor="White" CornerRadius="16" Margin="10,10,10,10" Padding="5" Command="{Binding Areasco}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

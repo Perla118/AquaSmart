@@ -5,13 +5,12 @@
                   NavigationPage.IconColor="Black"
                   NavigationPage.HasBackButton="True" 
                   NavigationPage.HasNavigationBar="False">
-    
     <MasterDetailPage.Master>
         <ContentPage BackgroundColor="White" Title="Menú" Padding="0,40,0,0">
             <ListView x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell TextColor="Black" Height="15" 
+                        <ImageCell TextColor="Black" Height="15"  
                                    Text="{Binding Nombre}"
                                    ImageSource="{Binding Icono}">
                         </ImageCell>
@@ -20,8 +19,5 @@
             </ListView>
         </ContentPage>
     </MasterDetailPage.Master>
-
 </MasterDetailPage>
-
-
 <!--BackgroundColor="#5e5a5a"-->
