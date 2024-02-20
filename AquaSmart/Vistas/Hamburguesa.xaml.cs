@@ -16,6 +16,7 @@ namespace AquaSmart.Vistas
         public Hamburguesa()
         {
             InitializeComponent();
+            BindingContext = new VMburger(Navigation);
             Elmenu();
         }
 

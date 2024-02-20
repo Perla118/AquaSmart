@@ -5,19 +5,36 @@
                   NavigationPage.IconColor="Black"
                   NavigationPage.HasBackButton="True" 
                   NavigationPage.HasNavigationBar="False">
+
     <MasterDetailPage.Master>
         <ContentPage BackgroundColor="White" Title="Menú" Padding="0,40,0,0">
-            <ListView x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ImageCell TextColor="Black" Height="15"  
-                                   Text="{Binding Nombre}"
-                                   ImageSource="{Binding Icono}">
-                        </ImageCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            <StackLayout>
+
+                <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Center">
+                    <Image Source="https://i.ibb.co/YRF0jQF/usuariodeperfil.png" HeightRequest="100" WidthRequest="100" Margin="0,30,10,0"/>
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center">
+                    <Label Text="usuario@example.com" VerticalTextAlignment="Center" FontSize="Small" TextColor="Black" Margin="0,0,0,40"/>
+                </StackLayout>
+
+
+                <ListView x:Name="ListMenu" ItemSelected="ListMenu_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell TextColor="Black" Height="15" Text="{Binding Nombre}" ImageSource="{Binding Icono}">
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Margin="0,0,0,28">
+                    <!--<Image Source="https://i.ibb.co/P5mkBj1/cerrar-sesion.png" HeightRequest="60" WidthRequest="60"/>-->
+                    <ImageButton Source="https://i.ibb.co/P5mkBj1/cerrar-sesion.png" HeightRequest="60" WidthRequest="60" BackgroundColor="Transparent" Command="{Binding Volver}"/>
+                    <Label Text="Cerrar sesión" TextColor="Black"  FontSize="15" VerticalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+
         </ContentPage>
     </MasterDetailPage.Master>
+
 </MasterDetailPage>
 <!--BackgroundColor="#5e5a5a"-->
