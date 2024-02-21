@@ -13,7 +13,7 @@ using System.Text;
 namespace AquaSmart.Droid
 {
     [Activity(Label = "AquaSmart", Icon = "@mipmap/icon", Theme = "@style/nuevoTema", 
-        MainLauncher = false, ConfigurationChanges = ConfigChanges.ScreenSize)]
+        MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize)]
     public class SplashScreen : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

@@ -8,7 +8,7 @@
             <StackLayout VerticalOptions="Start"
                          Spacing="10"
                          Padding="10">
-                <Label Text="Ubicaciones"
+                <Label Text="Mapa general de las zonas riego"
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="#5f765f"
@@ -33,11 +33,11 @@
 
                 <Image Source="https://i.ibb.co/sCfhCyt/Captura-de-pantalla-2024-02-18-223805.png" WidthRequest="200" HeightRequest="300"/>
 
-                <Label Text="Durante el día"
+                <!--<Label Text="Durante el "
                     FontSize="24"
                     FontAttributes="None"
                     TextColor="#345fcf"
-                    HorizontalOptions="Fill" />
+                    HorizontalOptions="Fill" />-->
 
                 <!--<Image Source="https://i.ibb.co/Fn7mf03/Whats-App-Image-2024-02-19-at-02-33-30.jpg" WidthRequest="340" HeightRequest="320"/>-->
 

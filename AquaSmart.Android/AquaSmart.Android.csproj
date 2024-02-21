@@ -101,9 +101,6 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\irrigationdef.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\AquaSmart\AquaSmart.csproj">
       <Project>{4FBE809D-2AA6-4B9A-9790-C3A03289A6E3}</Project>
       <Name>AquaSmart</Name>
@@ -118,6 +115,12 @@
     <AndroidResourceAnalysisConfig Include="Resources\drawable\splashscreenpresentacion.xml">
       <SubType>Designer</SubType>
     </AndroidResourceAnalysisConfig>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\irri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\irriga.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
