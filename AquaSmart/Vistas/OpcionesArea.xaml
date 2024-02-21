@@ -20,7 +20,7 @@
                 <Button Text="Activar Riego"
                         BackgroundColor="#00b510"
                         TextColor="White"
-                        Margin="60,0,40,0"/>
+                        Margin="5,0,40,0"/>
 
                 <Button Text="Apagar riego"
                         BackgroundColor="#e20101"
