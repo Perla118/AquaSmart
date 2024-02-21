@@ -29,6 +29,7 @@ namespace AquaSmart.ViewModels
         #region PROCESOS
         public async Task Volver()
         {
+            await DisplayAlert("Mensaje", "Se ha enviado un codigo de recuperación a su email","Aceptar");
             await Navigation.PushAsync(new Login());
         }
         #endregion
