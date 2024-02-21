@@ -39,7 +39,7 @@
                     TextColor="#345fcf"
                     HorizontalOptions="Fill" />
 
-                <Image Source="https://i.ibb.co/Fn7mf03/Whats-App-Image-2024-02-19-at-02-33-30.jpg" WidthRequest="340" HeightRequest="320"/>
+                <!--<Image Source="https://i.ibb.co/Fn7mf03/Whats-App-Image-2024-02-19-at-02-33-30.jpg" WidthRequest="340" HeightRequest="320"/>-->
 
                 <!--Grafica-->
                 

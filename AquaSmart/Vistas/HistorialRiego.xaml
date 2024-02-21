@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AquaSmart.Vistas.HistorialRiego" BackgroundColor="White" NavigationPage.IconColor="Black">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" Padding="20">
+            <Label Text="Historial de Riego"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#35424a"
+                   HorizontalOptions="Start" />
+
+            <BoxView HeightRequest="1"
+                     BackgroundColor="#5f765f"
+                     HorizontalOptions="FillAndExpand" />
+
+
+            <ListView x:Name="historialListView" VerticalOptions="FillAndExpand">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Fecha: 01/01/2024 - Hora: 08:00 AM - 09:30 AM</x:String>
+                        <x:String>Fecha: 02/01/2024 - Hora: 08:00 AM - 09:30 AM</x:String>
+                        <x:String>Fecha: 03/01/2024 - Hora: 08:00 AM - 09:30 AM</x:String>
+                        <x:String>Fecha: 04/01/2024 - Hora: 08:00 AM - 09:30 AM</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

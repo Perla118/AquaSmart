@@ -29,7 +29,12 @@
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="Start" Margin="0,0,0,28">
                     <!--<Image Source="https://i.ibb.co/P5mkBj1/cerrar-sesion.png" HeightRequest="60" WidthRequest="60"/>-->
                     <ImageButton Source="https://i.ibb.co/P5mkBj1/cerrar-sesion.png" HeightRequest="60" WidthRequest="60" BackgroundColor="Transparent" Command="{Binding Volver}"/>
-                    <Label Text="Cerrar sesión" TextColor="Black"  FontSize="15" VerticalTextAlignment="Center"/>
+                    <!--<Label Text="Cerrar sesión" TextColor="Black"  FontSize="15" VerticalTextAlignment="Center"/>-->
+                    <Label Text="Cerrar sesión" TextColor="Black"  FontSize="15" VerticalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Volver}"/>
+                        </Label.GestureRecognizers>
+                    </Label>
                 </StackLayout>
             </StackLayout>
 

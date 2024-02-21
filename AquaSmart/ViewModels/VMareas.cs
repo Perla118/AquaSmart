@@ -29,7 +29,7 @@ namespace AquaSmart.ViewModels
         #region PROCESOS
         public async Task Menu()
         {
-            await Navigation.PushAsync(new ConfArea());
+            await Navigation.PushAsync(new OpcionesArea());
         }
         public async Task Areas()
         {

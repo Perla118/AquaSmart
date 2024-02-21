@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AquaSmart.Vistas.OpcionesArea" BackgroundColor="White" NavigationPage.IconColor="Black">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Spacing="15" Padding="20">
+
+            <Label Text="Area verde"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#35424a"
+                   HorizontalOptions="Start" />
+
+            <BoxView HeightRequest="1"
+                     BackgroundColor="#5f765f"
+                     HorizontalOptions="FillAndExpand" />
+
+
+            <StackLayout Margin="0,0,0,40" Orientation="Horizontal" Spacing="15">
+                <Button Text="Activar Riego"
+                        BackgroundColor="#00b510"
+                        TextColor="White"
+                        Margin="60,0,40,0"/>
+
+                <Button Text="Apagar riego"
+                        BackgroundColor="#e20101"
+                        TextColor="White"
+                        />
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical" Spacing="15">
+                <Button Text="Configurar Horario"
+                        BackgroundColor="#5f765f"
+                        TextColor="White"
+                        Command="{Binding Confcommand}"/>
+
+                <Button Text="Ver Historial de Riego"
+                        BackgroundColor="#5f765f"
+                        TextColor="White"
+                        Command="{Binding Historiaal}"/>
+
+                <Button Text="Asignar Sensor"
+                        BackgroundColor="#5f765f"
+                        TextColor="White"
+                        Command="{Binding MostrarSensoresCommand}"/>
+                <Picker x:Name="picker" Title="Selecciona un elemento" IsVisible="{Binding VerSensores}" 
+                        TitleColor="Black">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Sensor 1</x:String>
+                            <x:String>Sensor 2</x:String>
+                            <x:String>Sensor 3</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Button Text="Asignar Actuador"
+                        BackgroundColor="#5f765f"
+                        TextColor="White"
+                        Command="{Binding MostrarActuadoresCommand}"/>
+                <Picker x:Name="picker2" Title="Selecciona un elemento" IsVisible="{Binding VerActuadores}"
+                        TitleColor="Black">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Actuador 1</x:String>
+                            <x:String>Actuador 2</x:String>
+                            <x:String>Actuador 3</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

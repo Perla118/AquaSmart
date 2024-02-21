@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace AquaSmart.Vistas
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Areas : ContentPage
-    {
-        public Areas()
-        {
-            InitializeComponent();
-        }
-    }
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class HistorialRiego : ContentPage
+	{
+		public HistorialRiego ()
+		{
+			InitializeComponent ();
+		}
+	}
 }

@@ -31,10 +31,15 @@ namespace AquaSmart.ViewModels
         {
             await Navigation.PushAsync(new Regist());
         }
+        public async Task ContraOlvidada()
+        {
+            await Navigation.PushAsync(new ForgetPassword());
+        }
 
         #endregion
         #region COMANDOS
         public ICommand Menu => new Command(async () => await IraMenu());
+        public ICommand Contraseña => new Command(async () => await ContraOlvidada());
         public ICommand Registro => new Command(async () => await IraRegistro());
         #endregion
     }
