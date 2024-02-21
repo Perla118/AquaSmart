@@ -16,7 +16,7 @@
                        FontSize="24"
                        FontAttributes="Bold"
                        TextColor="#5f765f"
-                       HorizontalOptions="Start" />
+                       HorizontalOptions="Start"/>
                 <BoxView HeightRequest="1"
                          BackgroundColor="#5f765f"
                          HorizontalOptions="FillAndExpand" />
@@ -43,18 +43,27 @@
                            VerticalOptions="Center"
                            HorizontalOptions="Center" TextTransform="Default"/>-->
                     <Label Text="Progreso de riego"
-                     FontSize="19"
+                     FontSize="18"
                         FontAttributes="Bold"
                     TextColor="#b0becc"
-                             Grid.Column="1"
-                     VerticalOptions="CenterAndExpand"
+                             Grid.ColumnSpan="3"
+                             VerticalOptions="CenterAndExpand"
                      HorizontalOptions="CenterAndExpand"
                          TextTransform="Default"
-                     HeightRequest="50"/>
+                     HeightRequest="50"
+                           Margin="0,0,0,35"/>
 
                     <!--Using linear progress bar-->
                     <!--<progressBar:SfLinearProgressBar Progress="64" Grid.Column="1" Grid.Row="3"/>-->
-                    <progressBar:SfCircularProgressBar Progress="64" Grid.Column="1" Grid.Row="1" ProgressColor="#7fe1ad" AnimationDuration="500"/>
+                    <progressBar:SfCircularProgressBar  Progress="64" Grid.Column="1" Grid.Row="1" ProgressColor="#7fe1ad" AnimationDuration="500">
+                        <progressBar:SfCircularProgressBar.Scale>
+                            <OnIdiom x:TypeArguments="x:Double">
+                                <OnIdiom.Phone>2.5</OnIdiom.Phone>
+                                <OnIdiom.Tablet>2.5</OnIdiom.Tablet>
+                                <OnIdiom.Desktop>2</OnIdiom.Desktop>
+                            </OnIdiom>
+                        </progressBar:SfCircularProgressBar.Scale>
+                    </progressBar:SfCircularProgressBar>
                     <!--Using circular progress bar-->
                     <!--<progressBar:SfCircularProgressBar Progress="90"/>-->
 
@@ -79,9 +88,10 @@
                      FontSize="16"
                         FontAttributes="Bold"
                       TextColor="#394d69"
-                     Grid.Column="1"
+                     Grid.ColumnSpan="3"
                      Grid.Row="5"
-                        VerticalOptions="Center" HorizontalOptions="Center"/>
+                        VerticalOptions="Center" HorizontalOptions="Center"
+                           Margin="5,0,0,0"/>
 
                     <!--<BoxView BackgroundColor="#5f765f" Grid.Column="0" Grid.ColumnSpan="3" Grid.RowSpan="1" Grid.Row="7" VerticalOptions="FillAndExpand" HeightRequest="1"/>-->
                         <!--<Frame Grid.Column="0" Grid.Row="7" HeightRequest="1" WidthRequest="3" BackgroundColor="Transparent" BorderColor="#5f765f" HasShadow="False" Grid.ColumnSpan="3" Grid.RowSpan="1"/>-->
