@@ -17,7 +17,7 @@
                      BackgroundColor="#5f765f"
                      HorizontalOptions="FillAndExpand" />
 
-                <FlexLayout Wrap="Wrap" JustifyContent="SpaceAround" AlignItems="Start" AlignContent="Start">
+                <FlexLayout Wrap="Wrap" JustifyContent="SpaceBetween" AlignItems="Start" AlignContent="Start">
 
                     <Frame WidthRequest="280" HeightRequest="150" BackgroundColor="#5f765f"
                             CornerRadius="15" Margin="5">
@@ -49,8 +49,18 @@
                             <Label Text="Área sur" VerticalOptions="End" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="14" Margin="0,0,0,-19"/>
                         </Grid>
                     </Frame>
+                    <Frame x:Name="nuevoJardinFrame" WidthRequest="280" HeightRequest="150" BackgroundColor="#5f765f" CornerRadius="15" Margin="5" IsVisible="False">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Confcommand}" CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
+                        <Grid>
+                            <Image Source="URL_DEL_NUEVO_JARDIN" Aspect="AspectFill" HeightRequest="100" />
+                            <Label Text="Nuevo Jardín" VerticalOptions="End" HorizontalOptions="CenterAndExpand" TextColor="White" FontSize="14" Margin="0,0,0,-19"/>
+                        </Grid>
+                    </Frame>
 
                 </FlexLayout>
+                <Button Text="Agregar Jardín" Clicked="Button_Clicked" HorizontalOptions="Center" />
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -18,5 +18,10 @@ namespace AquaSmart.Vistas
             InitializeComponent();
             BindingContext = new VMareas(Navigation);
         }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            nuevoJardinFrame.IsVisible = true;
+        }
     }
 }
