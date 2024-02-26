@@ -63,6 +63,10 @@ namespace AquaSmart.ViewModels
         {
             VerActuadores = !VerActuadores;
         }
+        public async void Alerta()
+        {
+            await DisplayAlert("MENSAJE", "El riego se activará en 15 segundos", "Salir");
+        }
         #endregion
 
         #region COMANDOS
@@ -70,6 +74,7 @@ namespace AquaSmart.ViewModels
         public ICommand Historiaal => new Command(async () => await Historial());
         public ICommand MostrarSensoresCommand => new Command(MostrarSensores);
         public ICommand MostrarActuadoresCommand => new Command(MostrarActuadores);
+        public ICommand AlertaCommand => new Command(Alerta);
         #endregion
     }
 }

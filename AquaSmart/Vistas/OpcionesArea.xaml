@@ -20,7 +20,8 @@
                 <Button Text="Activar Riego"
                         BackgroundColor="#00b510"
                         TextColor="White"
-                        Margin="5,0,40,0"/>
+                        Margin="5,0,40,0"
+                        Command="{Binding AlertaCommand}"/>
 
                 <Button Text="Apagar riego"
                         BackgroundColor="#e20101"
