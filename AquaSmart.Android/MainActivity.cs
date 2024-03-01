@@ -17,6 +17,11 @@ namespace AquaSmart.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+
+            //PARA EL MAPITA
+            Xamarin.FormsGoogleMaps.Init(this, savedInstanceState);
+
             Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF1cXmhKYVF2WmFZfVpgcV9CaFZRRWYuP1ZhSXxXdkdiUH9bdHxVR2haWUU=");
             LoadApplication(new App());
             ImageCircleRenderer.Init();
