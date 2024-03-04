@@ -55,7 +55,7 @@
 
                     <!--Using linear progress bar-->
                     <!--<progressBar:SfLinearProgressBar Progress="64" Grid.Column="1" Grid.Row="3"/>-->
-                    <progressBar:SfCircularProgressBar  Progress="64" Grid.Column="1" Grid.Row="1" ProgressColor="#7fe1ad" AnimationDuration="500">
+                    <progressBar:SfCircularProgressBar  Progress="64" Grid.Column="1" Grid.Row="1" ProgressColor="#7fe1ad" AnimationDuration="5000">
                         <progressBar:SfCircularProgressBar.Scale>
                             <OnIdiom x:TypeArguments="x:Double">
                                 <OnIdiom.Phone>2.5</OnIdiom.Phone>

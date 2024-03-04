@@ -117,5 +117,17 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\prub.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\libros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ceespedd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\edificioo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

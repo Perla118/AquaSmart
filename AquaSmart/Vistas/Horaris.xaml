@@ -1,24 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
              x:Class="AquaSmart.Vistas.Horaris"
              NavigationPage.IconColor="Black" BackgroundColor="White">
+
     <ContentPage.Content>
-        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
+        <StackLayout>
+            <ScrollView BackgroundColor="White">
+                <StackLayout VerticalOptions="Start"
+                             Spacing="10"
+                             Padding="10" BackgroundColor="Transparent">
 
-            <maps:Map x:Name="map"
-                  InitialCameraUpdate="27.36784668642386, -109.93249298833581, 17"
-                  VerticalOptions="FillAndExpand">
-            </maps:Map>
-        </Grid>
+                    <Label Text="Zonas de Riego"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           TextColor="#5f765f"
+                           HorizontalOptions="Start"/>
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="#5f765f"
+                             HorizontalOptions="FillAndExpand" />
+
+                    <!-- Puedes añadir más elementos aquí -->
+
+                </StackLayout>
+            </ScrollView>
+            <maps:Map x:Name="MapView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" InitialCameraUpdate="27.366736, -109.931755, 18" />
+
+            <StackLayout Spacing="15" Padding="20" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="FillAndExpand" BackgroundColor="White">
+                <Button BackgroundColor="#5f765f" HorizontalOptions="EndAndExpand" VerticalOptions="Center" HeightRequest="50" Text="ZONAS" Clicked="Street_OnClicked"  CornerRadius="25"/>
+                <Button BackgroundColor="#5f765f" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="50" Text="HIBRIDO" Clicked="Hybrid_OnClicked" CornerRadius="25"/>
+                <Button BackgroundColor="#5f765f" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="50" Text="SATELITE" Clicked="Satellite_OnClicked" CornerRadius="25"/>
+            </StackLayout>
+        </StackLayout>
     </ContentPage.Content>
-
-    <!--<StackLayout Margin="50">
-
-    <maps:Map x:Name="map" MapType="Terrain"/>
-    <Label Text="Visualiza la zona a regar" FontSize="36" HorizontalOptions="Center"  />
-</StackLayout>-->
 </ContentPage>
+
